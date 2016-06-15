@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>斗地主翻牌活动</title>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+<body>
+	<img class="top" src="./images/background.png" >
+	<div class="top-center">
+	<p class="goTurn">以下五张牌中必有一张王牌，快去翻一翻</p>
+	<p class="turnNotice">您目前的翻牌：机会<b id="times"></b>次</p>
+    </div>
+    <!-- 翻牌区-->
+    <div class="turnCard">
+    	<img class="tableOne" src="./images/table.png">
+    	<!-- 翻5张王牌 -->
+    	<ul class="turn">
+
+    	<li>
+    	<div class="card" >
+        <div class="front">
+    		<img src="./images/card.png" alt="翻牌正面">
+        </div>
+        <div class="back">
+            <img src="./images/sorry.png" alt="翻牌反面">
+        </div>
+    	</div>
+    	<a href="javascript:;"><img src="./images/button.png" class="btn btnTurn1"></a>
+    	</li>
+
+    	<li>
+        <div class="card">
+        <div class="front">
+            <img src="./images/card.png" alt="翻牌正面">
+        </div>
+        <div class="back">
+            <img src="./images/turn1.png" alt="翻牌反面">
+        </div>
+        </div>
+        <a href="javascript:;"><img src="./images/button.png" class="btn btnTurn1"></a>
+        </li>
+
+    	<li>
+        <div class="card">
+        <div class="front">
+            <img src="./images/card.png" alt="翻牌正面">
+        </div>
+        <div class="back">
+            <img src="./images/turn1.png" alt="翻牌反面">
+        </div>
+        </div>
+        <a href="javascript:;"><img src="./images/button.png" class="btn btnTurn1"></a>
+        </li>
+
+    	<li>
+        <div class="card">
+        <div class="front">
+            <img src="./images/card.png" alt="翻牌正面">
+        </div>
+        <div class="back">
+            <img src="./images/sorry.png" alt="翻牌反面">
+        </div>
+        </div>
+        <a href="javascript:;"><img src="./images/button.png" class="btn btnTurn1"></a>
+        </li>
+
+    	<li>
+        <div class="card">
+        <div class="front">
+            <img src="./images/card.png" alt="翻牌正面">
+        </div>
+        <div class="back">
+            <img src="./images/turn1.png" alt="翻牌反面">
+        </div>
+        </div>
+        <a href="javascript:;"><img src="./images/button.png" class="btn btnTurn1"></a>
+        </li>
+    	 </ul>
+    </div>
+    <!-- 奖品展示区 -->
+    <div class="scroll">
+    <div>
+    <h2 class="showpresent"></h2>
+    </div>
+     <div class="change_btn">
+       <span><img class="prev" src="./images/left_button.png"></span>
+      <span><img class="next" src="./images/right_button.png"></span>
+     </div>
+     <div class="v_show">
+    <div class="v_content">
+    	<ul class="list">
+    		<li>
+    		<img src="./images/phone.png" class="png">
+    		<h4 class="caption">iphone  5s</h4>
+    		</li>
+
+    		<li>
+    		<img src="./images/rope.png" class="png">
+    		<h4 class="caption">蓝牙耳机</h4>
+    		</li>
+
+    		<li>
+    		<img src="./images/mouse.png">
+    		<h4 class="caption">雷蛇鼠标</h4>
+    		</li>
+
+    		<li>
+    		<img src="./images/cat.png">
+    		<h4 class="caption">阿狸抱枕</h4>
+    		</li>
+
+    		<li>
+    		<img src="./images/phone.png">
+    		<h4 class="caption">马克杯</h4>
+    		</li>
+
+
+        <li>
+        <img src="./images/phone.png" class="png">
+        <h4 class="caption">iphone  5s</h4>
+        </li>
+
+        <li>
+        <img src="./images/rope.png" class="png">
+        <h4 class="caption">蓝牙耳机</h4>
+        </li>
+
+        <li>
+        <img src="./images/mouse.png">
+        <h4 class="caption">雷蛇鼠标</h4>
+        </li>
+
+        <li>
+        <img src="./images/cat.png">
+        <h4 class="caption">阿狸抱枕</h4>
+        </li>
+
+        <li>
+        <img src="./images/phone.png">
+        <h4 class="caption">马克杯</h4>
+        </li>
+
+    	</ul>
+      </div>
+  </div>
+  </div>
+    <!-- 活动规则 -->
+    <div class="bottom">
+    <div>
+    <h2 class="rule"></h2>
+    </div>
+    <div class="board board1">
+         <div style="margin:10px 12px;">
+            <div class="round">1</div><p>活动所有虚拟奖品实时发放，请留意查收。</p><br>
+            <div class="round">2</div><p>活动所有实物奖品，在活动结束后15个工作日内安排发放。</p><br>
+            <div class="round">3</div><p>活动中实物奖品用户，如需更改收获地址，请【<a class="alink">点击这里修改。</a>】</p><br>
+            <div class="round">4</div><p>举办方有权利在法律允许的范围内修改和优化。</p><br>
+            <div class="round">5</div><p>本活动最终解释权归边锋网络科技公司所有,点击【<a class="alink">获得更多抽奖机会</a>】</p><br>
+            <div class="round">6</div><p>客服电话：666666666</p>
+         </div>
+    </div>
+
+    <!-- 中奖播报 -->
+    <div>
+    <h2 class="notice"></h2>
+    </div>
+    <!-- 排行榜 -->
+    <div class="board board2">
+       <div class="topRec_List">
+           <dl>
+           <dd>幸运用户</dd>
+           <dd>获奖时间</dd>
+           <dd>奖品</dd>
+           </dl>
+       <div class="maquee">
+           <ul>
+               <li>
+                   <div>布袋A咔咔</div>
+                   <div>2016-06-08</div>
+                   <div>iPhone 5s</div>
+               </li>
+
+               <li>
+                   <div>爱吃手指</div>
+                   <div>2016-06-08</div>
+                   <div>30元话费充值卡</div>
+               </li>
+
+               <li>
+                   <div>怪蜀黍</div>
+                   <div>2016-06-08</div>
+                   <div>小熊抱枕</div>
+               </li>
+
+                <li>
+                   <div>推不倒的大熊</div>
+                   <div>2016-06-08</div>
+                   <div>蓝牙耳机</div>
+               </li>
+
+                <li>
+                   <div>会飞的乌龟</div>
+                   <div>2016-06-08</div>
+                   <div>1000欢乐豆</div>
+               </li>
+
+                <li>
+                   <div>妹妹真棒</div>
+                   <div>2016-06-08</div>
+                   <div>100欢乐豆</div>
+               </li>
+
+                <li>
+                   <div>黑呵呵</div>
+                   <div>2016-06-08</div>
+                   <div>马克杯</div>
+               </li>
+
+           </ul>
+       </div>
+       </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="./scripts/jquery.js"></script>
+   <script type="text/javascript">
+   /*图片翻牌效果*/ 
+   $(function(){
+       var count = 3;
+       var num = 3;
+       var aBtn = $(".turn li a");
+       var aa = $('<span class="num">'+ num +'<span>').appendTo('#times');
+       aBtn.click(function(){
+            num--;
+            count--;
+            if(count >= 0 && num >=0 ){
+                $(this).siblings().addClass('hover');
+                $('.num').remove();//移除前一次的结果
+                $('<span class="num">'+num+'<span>').appendTo('#times');
+            }else{
+                 $('.num').remove();//移除前一次的结果
+                 $('<span class="num">'+0+'<span>').appendTo('#times');
+                alert("亲，今天的3次机会已经用完了，明天继续加油哦!");
+            }
+        });
+
+   })
+    
+    /*图片滚动效果*/
+        $(function(){
+            var page = 1;
+            var i = 5;//每个版面5张相片
+            //点击向后的按钮
+            $("span .next").click(function(){
+                var $parent = $(this).parents("div.scroll");//获得最外围展示区的div
+                var $v_content = $parent.find('div.v_content');
+                 var $pictureShow = $parent.find("ul.list")//找到展示区内容的ul
+                var v_width  =158;
+                var length = $pictureShow.find('li').length;
+                //alert(length);
+                var page_count = Math.ceil(length/i);//只要不是整数，就往大的方向取最小的整数
+
+                if(!$pictureShow.is(":animated")){
+                    if(page == page_count)//说明已经到最后一个版面了，如果再向后的话必须回到第一个版面
+                    {
+                       $v_content.animate({left: "0px"}, "slow");
+                        page = 1;
+                    }else{
+                        $v_content.animate({left:"-="+v_width},"slow");
+                        page++;
+                    }
+                }
+            });
+            //点击向前的按钮
+            $("span .prev").click(function(){
+                var $parent = $(this).parents("div.scroll");
+                var $v_content = $parent.find('div.v_content');
+                var $pictureShow = $parent.find("ul.list");
+                var v_width  = 158;
+                 var length = $pictureShow.find('li').length;
+                 var page_count = Math.ceil(length/i);//只要不是整数，就往大的方向取最小的整数
+                 if(page == 1){//已经到达第一个版面了，如果再向前，必须跳转到最后一个页面
+                    $v_content.animate({left:"-="+v_width*(page_count-1)},"slow");
+                    page = page_count;
+                 }else{
+                    $v_content.animate({left:"+="+v_width},"slow");
+                    page--;
+                 }
+
+            })
+        });
+
+        /*排行榜间歇滚动*/
+        function autoScroll(obj){
+            $(obj).find("ul").animate({
+                marginTop:"-36px"
+            },500,function(){
+                $(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
+                $(this).find("li:first div").addClass('highlight');//找到每次向上滚动的第一个li下的所有div,加高亮效果
+                
+            }).find("li:first div").removeClass('highlight');//每执行完一次就清除高亮
+        }
+        // 设置一定的间隔自动滚动
+        $(function(){
+            setInterval('autoScroll(".maquee")',3000);
+        })
+    </script>
+</body>
+</html>

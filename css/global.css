@@ -1,0 +1,324 @@
+*{
+	margin:0;
+	padding: 0;
+
+}
+.img{
+	display: block;
+}
+.clearfix{*zoom: 1;}
+.clearfix:after{display: block;height: 0;clear: both;font-size: 0;content: "";}
+
+.top{
+	width: 100%;
+	height:100%;
+	overflow: scroll;
+	margin:0 auto;
+	z-index: 0;
+}
+.top-center{
+	margin: -90% 0 0 0;
+	text-align: center;
+}
+.goTurn{
+	color: #501700;
+	font-weight: bolder;
+	font-size: 20px;
+	padding: 20px;
+}
+.turnNotice{
+	height: 25px;
+	width: 200px;
+	margin:0 auto;
+	position: relative;
+	z-index: 99;
+	background-color: #8c4100; 
+	padding: 4px 5px;
+	border-radius: 6px;
+	color:  #e19000;
+	font-size: 16px;
+	font-weight: bolder;
+	border: 2px solid #8c4100;
+	box-shadow: inset 0 0 4px #571e00;/*内阴影*/
+	
+}
+.num{
+	color: #fff067;
+	font-size: 20px;
+}
+/*翻牌区*/
+.turnCard{
+	margin: 14% 15%;
+	position: relative;
+}
+.card{
+	margin: 25%;
+	position: relative;
+}
+.turn li{
+    float: left;
+    margin-right: 18px;
+    width: 160px;
+    height: 298px;
+}
+.turn{
+ position: relative;
+ z-index: 100;
+ width: 1100px;
+ margin: -400px 0;
+}
+/*翻一下的按钮*/
+.btn{
+	display: inline-block;
+	cursor: pointer;
+	margin: 280px 26%;
+}
+
+li{
+	list-style: none;
+}
+.change_btn { width:30px;float:left; margin:7px 0 0 0px; }
+.change_btn span { display:block;}
+.change_btn .prev { 
+	margin: 85px 0 0 200px;
+	position: absolute;
+	z-index: 999;
+}
+.change_btn .next { 
+	margin-left:1140px;
+	margin-top:90px;
+	position: absolute;
+}
+/* 奖品滚动区 */
+.scroll{
+	width: 1100px;
+}
+.v_show{
+	 position:relative; 
+	 width:900px; 
+	 height:200px; 
+	 overflow:hidden; 
+	 margin-bottom: 90px;
+	 margin-left: 245px;
+}
+.v_content{
+	 position:absolute; 
+	 width:5000px;
+	 top:0px; 
+	 left:0px;
+
+}
+.showpresent{
+	width: 176px;
+	height:65px;
+	margin-bottom: 10px;
+	background: url("../images/showpresent.png") no-repeat;
+	position: relative;
+	z-index: 23;
+	margin-top: 420px;
+	margin-left: 230px;
+}
+.aa ul li div{
+    width: 158px;
+    height: 98px;
+    background-color: #a87c57;
+    vertical-align: middle;
+    line-height: 98px;
+    text-align: center;
+}
+.caption{
+	background-color: #e1bc8f;
+	color: #791712;
+	width:158px;
+	height: 28px;
+	padding-top: 10px;
+	text-align: center;
+
+}
+.list{
+	float: left;
+}
+.list li{
+	display:inline; 
+	float:left; 
+	margin:10px 2px 0; 
+	padding:8px;
+	width: 158px;
+	height:140px;
+}
+.list li img{
+	width: 158px;
+	height:140px;
+	display: block;/*消除了图片元素与h4之间的间隙*/
+	overflow: hidden;
+}
+
+.list li h4{
+	overflow: hidden;
+}
+.bottom{
+	width: 1100px;
+	position: absolute;
+}
+/*活动规则*/
+.rule{
+	width: 176px;
+	height:65px;
+	margin-bottom: 10px;
+	background: url("../images/rules.png") no-repeat;
+	position: relative;
+	z-index: 23;
+	margin:-4% 21%;
+}
+.board{
+	width: 460px;
+	height: 260px;
+	float: left;
+	background-color: #e1bc8f;
+	position: relative;
+	z-index: 2;
+	font-size: 13px;
+	display: inline;
+	border:1px solid #601d10;
+}
+.board p{
+    white-space:nowrap;
+    padding: 5px;
+    margin-left:25px;
+}
+
+.board1{
+	 margin: 5% 21%;
+}
+.board2{
+	margin: -320px 66%;
+}
+.alink{
+	color:#ff5500;
+	text-decoration: underline;
+
+}
+.round{
+	background-color: #64261d;
+	width: 20px;
+	height:20px;
+	-webkit-border-radius:10px; 
+	-moz-border-radius:10px; 
+	-o-border-radius:10px; 
+	border-radius:10px; 
+	text-align: center;
+	color: white;
+	float: left;
+}
+/*中奖播报*/
+.notice{
+	width: 176px;
+	height:60px;
+	margin-bottom: 15px;
+	background: url("../images/prizeNotice.png") no-repeat;
+	position: relative;
+	margin:-65px 66%;
+}
+.view{
+	color: #f8ee85;
+}
+/* 排行榜 */
+.maquee{
+	height: 195px;
+	overflow:hidden;
+}
+.topRec_List dl{
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: #a77c56;
+}
+.topRec_List dd{
+	float: left;
+	text-align: center;
+	border-right:1px solid #601d10;
+	color: #601d10;
+	width: 30%;
+	height: 40px;
+	line-height: 40px;
+	padding: 4px 7px;
+	font-size: 14px;
+	font-weight: bolder;
+}
+.topRec_List ul{
+	width: 100%;
+	height:280px;
+}
+
+.topRec_List li{
+	width: 100%;
+	height:35px;
+	color: #601d10;
+	text-align: center;
+	margin-left: 5%;
+	font-size: 14px;
+}
+
+.topRec_List li div{
+	float: left;
+	width: 30%;
+}
+.highlight{
+	color: #ff5500;
+}
+/* 翻牌效果 */
+.card.hover .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.card.hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+	
+.front, .back {
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			-ms-backface-visibility: hidden;
+			backface-visibility: hidden;
+
+		    -webkit-transition: 0.6s;
+		    -webkit-transform-style: preserve-3d;
+
+		    -moz-transition: 0.6s;
+		    -moz-transform-style: preserve-3d;
+
+		    -o-transition: 0.6s;
+		    -o-transform-style: preserve-3d;
+
+		    -ms-transition: 0.6s;
+		    -ms-transform-style: preserve-3d;
+
+		    transition: 0.6s;
+		    transform-style: preserve-3d;
+            width:160px;
+	        height: 210px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+.front {
+			-webkit-transform: rotateY(0deg);
+			-ms-transform: rotateY(0deg);
+			z-index: 2;
+		}
+
+.back {
+			-webkit-transform: rotateY(-180deg);
+		    -moz-transform: rotateY(-180deg);
+		    -o-transform: rotateY(-180deg);
+		    -ms-transform: rotateY(-180deg);
+		    transform: rotateY(-180deg);
+		}
