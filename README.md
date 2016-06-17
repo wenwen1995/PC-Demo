@@ -1,10 +1,9 @@
 # PC-Demo
 a PC-Demo
 做完这个小项目大概前后花了3天的时间，中间其实还遇到蛮多问题的，现在来总结下问题的出现和解决方法，以及获得的经验。
-<<<<<<< HEAD
 最终效果图为:![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/PcImg.png)
 
-问题1：img与h4之间的文字有间隙？
+####   问题1：img与h4之间的文字有间隙？
     在-->
     <ul class="list">
                  <li>
