@@ -1,6 +1,7 @@
 # PC-Demo
 a PC-Demo
 做完这个小项目大概前后花了3天的时间，中间其实还遇到蛮多问题的，现在来总结下问题的出现和解决方法，以及获得的经验。
+<<<<<<< HEAD
 最终效果图为:![image](https://github.com/wenwen1995/PC-Demo/screenshot/PcImg.png)
 
 问题1：img与h4之间的文字有间隙？
@@ -142,3 +143,8 @@ function autoscroll(obj){
 answer:锋利的jquery有实例代码。
 
 总之，在页面布局的position设置，jquery实现一些负责的动效还做得不是很好。。还得继续继续学习加油啊！！
+=======
+最终效果图为:![image](https://github.com/wenwen1995/PC-Demo/tree/master/screenshots/PcImg.png)
+
+问题1：
+>>>>>>> origin/master
