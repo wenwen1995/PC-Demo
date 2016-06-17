@@ -54,7 +54,7 @@ answer:因为对于顶层的div容器以及背景图的position没有设置好�
 ####   问题3：如何让p文字和div处于同一行？
 answer:设置div和p都为float:left;然后具体的再调整margin值，使它们对齐
 eg:
-   <div id="first">hello!</div><p>my first job~</p>
+        <div id="first">hello!</div><p>my first job~</p>
    样式为:
    #first{
         float: left;
@@ -67,8 +67,8 @@ eg:
 
 ####   问题4：如何让两个div 并行对齐处于同一行？
 answer:对于2个div要设置float:left;属性
-eg: <div class="board b1">我是第一个box</div>
-    <div class="board b2">我是第二个box</div>
+    eg:     <div class="board b1">我是第一个box</div>
+             <div class="board b2">我是第二个box</div>
 样式：
 .board{
         width: 300px;
