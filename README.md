@@ -5,13 +5,14 @@ a PC-Demo
 最终效果图为:![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/PcImg.png)
 
 问题1：img与h4之间的文字有间隙？
-    在<ul class="list">
+    在-->
+    <ul class="list">
                  <li>
                 <img src="./images/phone.png" class="png">
                <h4 class="caption">iphone  5s</h4>
              </li>
     <ul>
-中如果默认的话img 和 h4的文字之间是有间隙的，如图所示：![image](https://github.com/wenwen1995/PC-Demo/screenshot/ScreenClip.png)
+中如果默认的话img 和 h4的文字之间是有间隙的，如图所示：![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/ScreenClip.png)
 answer:为了消除这种间隙，在相应的css里面设置这样：
 .list li img{
     width: 158px;
