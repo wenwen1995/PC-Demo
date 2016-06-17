@@ -2,7 +2,7 @@
 a PC-Demo
 做完这个小项目大概前后花了3天的时间，中间其实还遇到蛮多问题的，现在来总结下问题的出现和解决方法，以及获得的经验。
 <<<<<<< HEAD
-最终效果图为:![image](https://github.com/wenwen1995/PC-Demo/screenshot/PcImg.png)
+最终效果图为:![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/PcImg.png)
 
 问题1：img与h4之间的文字有间隙？
     * 在<ul class="list">
@@ -19,7 +19,7 @@ answer:为了消除这种间隙，在相应的css里面设置这样：
     height:140px;
     display: block;/*消除了图片元素与h4之间的间隙*/
 }
-则设置之后就会变成这样：如图所示：![image](https://github.com/wenwen1995/PC-Demo/screenshot/Image.png)
+则设置之后就会变成这样：如图所示：![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/Image.png)
 
 问题2：初期在做的时候对于每个元素设置了很多的margin属性才让它们居中，但是又会随着浏览器窗口大小的改变而改变？
 answer:因为对于顶层的div容器以及背景图的position没有设置好，再加上对于内部的div,如果想让它不随浏览器窗口大小的改变而变化而且处于居中的位置话，就要这样设置：
@@ -50,7 +50,7 @@ answer:因为对于顶层的div容器以及背景图的position没有设置好�
         margin:0 auto;
     }
     </style>
-样子如图所示：![image](https://github.com/wenwen1995/PC-Demo/screenshot/example.png)
+样子如图所示：![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/example.png)
 
 问题3：如何让p文字和div处于同一行？
 answer:设置div和p都为float:left;然后具体的再调整margin值，使它们对齐
@@ -64,7 +64,7 @@ eg:
     p{
         float: left;
     }
-    此时可以让它们对齐，如图所示：![image](https://github.com/wenwen1995/PC-Demo/screenshot/example1.png)
+    此时可以让它们对齐，如图所示：![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/example1.png)
 
 问题4：如何让两个div 并行对齐处于同一行？
 answer:对于2个div要设置float:left;属性
@@ -82,7 +82,7 @@ eg: <div class="board b1">我是第一个box</div>
 .b2{
         background-color: purple;
     }
-如图所示：![image](https://github.com/wenwen1995/PC-Demo/screenshot/example2.png)
+如图所示：![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/example2.png)
 
 问题5：jQuery如何实现排行榜间歇滚动？
 answer:
@@ -144,7 +144,7 @@ answer:锋利的jquery有实例代码。
 
 总之，在页面布局的position设置，jquery实现一些负责的动效还做得不是很好。。还得继续继续学习加油啊！！
 =======
-最终效果图为:![image](https://github.com/wenwen1995/PC-Demo/tree/master/screenshots/PcImg.png)
+最终效果图为:![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/PcImg.png)
 
 问题1：
 >>>>>>> origin/master
