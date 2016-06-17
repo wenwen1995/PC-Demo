@@ -4,7 +4,7 @@ a PC-Demo
 最终效果图为:![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/PcImg.png)
 
 ####   问题1：img与h4之间的文字有间隙？
-    在-->
+    在
     <ul class="list">
                  <li>
                 <img src="./images/phone.png" class="png">
@@ -20,7 +20,7 @@ answer:为了消除这种间隙，在相应的css里面设置这样：
 }
 则设置之后就会变成这样：如图所示：![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/Image.png)
 
-问题2：初期在做的时候对于每个元素设置了很多的margin属性才让它们居中，但是又会随着浏览器窗口大小的改变而改变？
+####   问题2：初期在做的时候对于每个元素设置了很多的margin属性才让它们居中，但是又会随着浏览器窗口大小的改变而改变？
 answer:因为对于顶层的div容器以及背景图的position没有设置好，再加上对于内部的div,如果想让它不随浏览器窗口大小的改变而变化而且处于居中的位置话，就要这样设置：
   假设
         <div class="wrap">
@@ -51,7 +51,7 @@ answer:因为对于顶层的div容器以及背景图的position没有设置好�
     </style>
 样子如图所示：![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/example.png)
 
-问题3：如何让p文字和div处于同一行？
+####   问题3：如何让p文字和div处于同一行？
 answer:设置div和p都为float:left;然后具体的再调整margin值，使它们对齐
 eg:
    <div id="first">hello!</div><p>my first job~</p>
@@ -65,7 +65,7 @@ eg:
     }
     此时可以让它们对齐，如图所示：![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/example1.png)
 
-问题4：如何让两个div 并行对齐处于同一行？
+####   问题4：如何让两个div 并行对齐处于同一行？
 answer:对于2个div要设置float:left;属性
 eg: <div class="board b1">我是第一个box</div>
     <div class="board b2">我是第二个box</div>
@@ -83,7 +83,7 @@ eg: <div class="board b1">我是第一个box</div>
     }
 如图所示：![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/example2.png)
 
-问题5：jQuery如何实现排行榜间歇滚动？
+####   问题5：jQuery如何实现排行榜间歇滚动？
 answer:
 <!-- 排行榜 -->
     <div class="board board2">
@@ -124,14 +124,14 @@ answer:
 </div>
 
 jQuery代码为:
-function autoscroll(obj){
-    $(obj).find("ul").animate({
-      margin-top:-36px //这里的数值要跟ul li的高度一致
-    },500,function(){
-      $(this).css({margin-top:'0px'}).find("li:first").appendTo(this);//将每次向上滚动的li元素设置为距顶部设为为0px;且作为li的首元素
-      $(this).find("li:first div").addClass('highlight');//找到每次向上滚动的第一个li下的所有div,加高亮效果
-    }).find("li:first div").removeClass('highlight');////每执行完一次就清除高亮
-}
+        function autoscroll(obj){
+            $(obj).find("ul").animate({
+              margin-top:-36px //这里的数值要跟ul li的高度一致
+            },500,function(){
+              $(this).css({margin-top:'0px'}).find("li:first").appendTo(this);//将每次向上滚动的li元素设置为距顶部设为为0px;且作为li的首元素
+              $(this).find("li:first div").addClass('highlight');//找到每次向上滚动的第一个li下的所有div,加高亮效果
+            }).find("li:first div").removeClass('highlight');////每执行完一次就清除高亮
+        }
 
  // 设置一定的间隔自动滚动
         $(function(){
@@ -142,5 +142,3 @@ function autoscroll(obj){
 answer:锋利的jquery有实例代码。
 
 总之，在页面布局的position设置，jquery实现一些负责的动效还做得不是很好。。还得继续继续学习加油啊！！
-=======
-最终效果图为:![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/PcImg.png)
