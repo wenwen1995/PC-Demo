@@ -23,12 +23,12 @@ answer:为了消除这种间隙，在相应的css里面设置这样：
 ####   问题2：初期在做的时候对于每个元素设置了很多的margin属性才让它们居中，但是又会随着浏览器窗口大小的改变而改变？
 answer:因为对于顶层的div容器以及背景图的position没有设置好，再加上对于内部的div,如果想让它不随浏览器窗口大小的改变而变化而且处于居中的位置话，就要这样设置：
   假设
-        <div class="wrap">
+        `<div class="wrap">
             <div class="content" >111
                    <div class="content2">222</div>
                 </div>
                 
-         </div>
+         </div>`
     则为其设置这样的属性之后就会满足要求了：
     <style type="text/css">
     .wrap{
@@ -54,7 +54,7 @@ answer:因为对于顶层的div容器以及背景图的position没有设置好�
 ####   问题3：如何让p文字和div处于同一行？
 answer:设置div和p都为float:left;然后具体的再调整margin值，使它们对齐
 eg:
-        <div id="first">hello!</div><p>my first job~</p>
+   `<div id="first">hello!</div><p>my first job~</p>`
    样式为:
    #first{
         float: left;
@@ -124,19 +124,19 @@ answer:
 </div>
 
 jQuery代码为:
-        function autoscroll(obj){
+        `function autoscroll(obj){
             $(obj).find("ul").animate({
               margin-top:-36px //这里的数值要跟ul li的高度一致
             },500,function(){
               $(this).css({margin-top:'0px'}).find("li:first").appendTo(this);//将每次向上滚动的li元素设置为距顶部设为为0px;且作为li的首元素
               $(this).find("li:first div").addClass('highlight');//找到每次向上滚动的第一个li下的所有div,加高亮效果
             }).find("li:first div").removeClass('highlight');////每执行完一次就清除高亮
-        }
+        }`
 
- // 设置一定的间隔自动滚动
+       `// 设置一定的间隔自动滚动
         $(function(){
             setInterval('autoScroll(".maquee")',3000);
-        })
+        })`
 
 问题6：点击prev,next按钮图片向后向前滚动？
 answer:锋利的jquery有实例代码。
