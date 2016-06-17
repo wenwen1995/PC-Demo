@@ -5,14 +5,13 @@ a PC-Demo
 最终效果图为:![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/PcImg.png)
 
 问题1：img与h4之间的文字有间隙？
-    * 在<ul class="list">
-    *             <li>
-    *             <img src="./images/phone.png" class="png">
-    *             <h4 class="caption">iphone  5s</h4>
-    *           </li>
-    *     <ul>
-
-        中如果默认的话img 和 h4的文字之间是有间隙的，如图所示：![image](https://github.com/wenwen1995/PC-Demo/screenshot/ScreenClip.png)
+    在<ul class="list">
+                 <li>
+                <img src="./images/phone.png" class="png">
+               <h4 class="caption">iphone  5s</h4>
+             </li>
+    <ul>
+中如果默认的话img 和 h4的文字之间是有间隙的，如图所示：![image](https://github.com/wenwen1995/PC-Demo/screenshot/ScreenClip.png)
 answer:为了消除这种间隙，在相应的css里面设置这样：
 .list li img{
     width: 158px;
@@ -24,8 +23,8 @@ answer:为了消除这种间隙，在相应的css里面设置这样：
 问题2：初期在做的时候对于每个元素设置了很多的margin属性才让它们居中，但是又会随着浏览器窗口大小的改变而改变？
 answer:因为对于顶层的div容器以及背景图的position没有设置好，再加上对于内部的div,如果想让它不随浏览器窗口大小的改变而变化而且处于居中的位置话，就要这样设置：
   假设
-      <div class="wrap">
-                <div class="content" >111
+        <div class="wrap">
+            <div class="content" >111
                    <div class="content2">222</div>
                 </div>
                 
@@ -145,6 +144,3 @@ answer:锋利的jquery有实例代码。
 总之，在页面布局的position设置，jquery实现一些负责的动效还做得不是很好。。还得继续继续学习加油啊！！
 =======
 最终效果图为:![image](https://github.com/wenwen1995/PC-Demo/blob/master/screenshots/PcImg.png)
-
-问题1：
->>>>>>> origin/master
